@@ -1,20 +1,20 @@
 <?php
 
-$host = "localhost";
-$database = "test";
-$login = "root";
-$password = "root";
+// $host = "localhost";
+// $database = "test";
+// $login = "root";
+// $password = "root";
 
-try{
-    $pdo = new PDO('mysql:host='.$host.';port=3306; dbname='.$database.';charset=utf8', $login, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e){
-    die('Erreur : '.$e->getMessage());
-}
+// try{
+//     $pdo = new PDO('mysql:host='.$host.';port=3306; dbname='.$database.';charset=utf8', $login, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+// }
+// catch(Exception $e){
+//     die('Erreur : '.$e->getMessage());
+// }
 
-$getInfo = $pdo->query('SELECT * from personne');
-$getInfo->execute();
-$data = $getInfo->fetchall();
+// $getInfo = $pdo->query('SELECT * from personne');
+// $getInfo->execute();
+// $data = $getInfo->fetchall();
 
 // var_dump($data);
 
